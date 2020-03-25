@@ -37,7 +37,7 @@ echo "wait $_WAIT_TIME sec..."
 sleep "$_WAIT_TIME";
 echo "start screenshots..."
 while true; do
-   raspi2png -h 200 -w 400 -c 5 --pngname /var/www/html/addon/screen/screenshot_tmp.png  || cp -f /var/www/html/addon/error.png /var/www/html/addon/screen/screenshot_tmp.png
+   raspi2png -h 200 -w 300 -c 5 --pngname /var/www/html/addon/screen/screenshot_tmp.png  || cp -f /var/www/html/addon/error.png /var/www/html/addon/screen/screenshot_tmp.png
    cp -f /var/www/html/addon/screen/screenshot_tmp.png /var/www/html/addon/screen/screenshot.png
    sleep 3;
 done
